@@ -1,0 +1,68 @@
+000100191120.*-----------------------------------------------------------------------**
+000200191120.*
+000300191120.*  Compile options:
+000400191120.*
+000500191120.*    CrtPnlGrp PnlGrp( CBX2772H )
+000600191120.*              SrcFile( QPNLSRC )
+000700191120.*              SrcMbr( CBX2772H )
+000800191120.*
+000900191120.*-----------------------------------------------------------------------**
+001000191120:PNLGRP.
+001100191120
+001200191120:HELP NAME='CLCFILHASH'.
+001300191120Calculate File Hash Value - Help
+001400191120:P.
+001500191120The Calculate File Hash Value (CLCFILHASH) command calculates a hash value
+001600191120based on the specified input file.  The calculated hash value is displayed
+001700191120on the screen in a window.
+001800191120:EHELP.
+001900191120
+002000191120:HELP NAME='CLCFILHASH/INPFILE'.
+002100191120Input file (INPFILE) - Help
+002200191120
+002300191120:XH3.Input file (INPFILE)
+002400191120:P.
+002500191120Specifies the input file path to the calculate hash function.
+002600191120:P.
+002700191120A maximum path name length of 3000 bytes is supported.
+002800191120:P.
+002900191120This is a required parameter.
+003000191120:PARML.
+003100191120:PT.:PV.path-name:EPV.
+003200191120:PD.
+003300191120Specify the path name of the input file to use when calculating the hash
+003400191120value.
+003500191120:EPARML.
+003600191120:EHELP.
+003700191120
+003800191120:HELP NAME='CLCFILHASH/HASHALG'.
+003900191120Hash algorithm (HASHALG) - Help
+004000191120
+004100191120:XH3.Hash algorithm (HASHALG)
+004200191120:P.
+004300191120Specifies the hashing algorithm used when producing a hash value based
+004400191120on the specified input file.
+004500191120:PARML.
+004600191120:PT.:PK.*MD5:EPK.
+004700191120:PD.
+004800191120The MD5 hash algorithm is used. A hash value of 16 bytes is calculated.
+004900191120:PT.:PK DEF.*SHA1:EPK.
+005000191120:PD.
+005100191120The SHA-1 hash algorithm is used. A hash value of 20 bytes is
+005200191120calculated.
+005300191120:PT.:PK.*SHA256:EPK.
+005400191120:PD.
+005500191120The SHA-256 hash algorithm is used. A hash value of 32 bytes is
+005600191120calculated.
+005700191120:PT.:PK.*SHA384:EPK.
+005800191120:PD.
+005900191120The SHA-384 hash algorithm is used. A hash value of 48 bytes is
+006000191120calculated.
+006100191120:PT.:PK.*SHA512:EPK.
+006200191120:PD.
+006300191120The SHA-512 hash algorithm is used. A hash value of 64 bytes is
+006400191120calculated.
+006500191120:EPARML.
+006600191120:EHELP.
+006700191120
+006800191120:EPNLGRP.
